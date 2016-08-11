@@ -8,7 +8,7 @@
   },
   "author": "Kristoffer Brabrand <kristoffer@brabrand>",
   "license": "MIT",
-  "devDependencies": {
+  "optionalDependencies": {
     "gm": "^1.23.0"
   },
   "dependencies": {

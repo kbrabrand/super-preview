@@ -1,10 +1,19 @@
 var path = require('path');
 var merge = require('lodash.merge');
+var imagick;
+
+try {
+    //Check if gm (Graphics Magick) is installed
+    require.resolve('gm');
+
+    imagick = require('gm').subClass({
+        imageMagick: true
+    });
+} catch() {}
 
 module.exports = function SuperPreviewClient(opts) {
     opts = merge({
-        qTablePath: path.join(__dirname, 'q-table.xml'),
-        imagick: null
+        qTablePath: path.join(__dirname, 'q-table.xml')
     }, (options || {}));
 
     return {
@@ -16,8 +25,8 @@ module.exports = function SuperPreviewClient(opts) {
          * @param cb function Callback function
          */
         compress: function compress(inputBuffer, cb) {
-            if (!opts.imagick) {
-                console.warn('imagick must be passed to the SuperPreviewClient in order to compress images');
+            if (!imagick) {
+                console.warn('The npm module gm is not installed');
                 return;
             }
 
