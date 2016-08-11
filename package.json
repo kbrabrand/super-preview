@@ -1,0 +1,17 @@
+{
+  "name": "super-preview-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kristoffer Brabrand <kristoffer@brabrand>",
+  "license": "MIT",
+  "devDependencies": {
+    "gm": "^1.23.0"
+  },
+  "dependencies": {
+    "lodash.merge": "^4.5.1"
+  }
+}
