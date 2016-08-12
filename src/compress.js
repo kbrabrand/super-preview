@@ -52,10 +52,15 @@ module.exports = function(opts) {
                     }
 
                     // Return the image data part of the binary data buffer
-                    cb(null,
-                        width + ':' +
-                        height + ':' +
-                        outputBuffer.slice(disposablePortionEnd + 2));
+                    cb(null, {
+                        compressed: (
+                            width + ':' +
+                            height + ':' +
+                            outputBuffer.slice(disposablePortionEnd + 2)
+                        ),
+                        width: size.width,
+                        height: size.height
+                    });
                 });
         });
     }
