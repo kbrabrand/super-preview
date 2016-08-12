@@ -9,7 +9,7 @@ module.exports = function(opts) {
             height: parseInt(compressed.slice(3, 2), 10),
             base64: Buffer.concat([
                 prefixHeader,
-                new Buffer(compressed.slice(6))
+                new Buffer(compressed.slice(6), 'hex')
             ]).toString('base64')
         }
     }

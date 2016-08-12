@@ -56,7 +56,7 @@ module.exports = function(opts) {
                         compressed: (
                             width + ':' +
                             height + ':' +
-                            outputBuffer.slice(disposablePortionEnd + 2)
+                            outputBuffer.slice(disposablePortionEnd + 2).toString('hex')
                         ),
                         width: size.width,
                         height: size.height
