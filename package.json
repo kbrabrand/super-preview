@@ -1,12 +1,9 @@
 {
-  "name": "super-preview-client",
+  "name": "super-preview",
   "version": "1.0.0",
-  "description": "",
+  "description": "Client for compressing and assembling images when creating tiny preview images",
   "main": "index.js",
   "browser": "browser.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "Kristoffer Brabrand <kristoffer@brabrand>",
   "license": "MIT",
   "optionalDependencies": {
