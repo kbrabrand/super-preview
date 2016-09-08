@@ -1,8 +1,6 @@
-var prefixHeader = require('../assets/image-header');
+var prefixHeader = require('../image-header');
 
 module.exports = function(opts) {
-    console.log(opts);
-
     return function assemble(compressed, cb) {
         return {
             width: parseInt(compressed.slice(0, 2), 10),
