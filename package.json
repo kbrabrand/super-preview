@@ -1,6 +1,6 @@
 {
   "name": "super-preview",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Client for compressing and assembling images when creating tiny preview images",
   "main": "index.js",
   "browser": "browser.js",
