@@ -11,7 +11,7 @@ module.exports = function SuperPreviewClient(opts) {
     }, opts);
 
     return {
-        compress: compress(opts),
-        assemble: assemble(opts)
+        compress: compress(options),
+        assemble: assemble(options)
     }
 }
