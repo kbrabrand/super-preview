@@ -37,7 +37,7 @@ client.compress(
 );
 ```
 
-### Assembling a compressed data
+### Assembling a compressed image
 ```js
 var SuperPreviewClient = require('super-preview-client');
 var client = new SuperPreviewClient();
